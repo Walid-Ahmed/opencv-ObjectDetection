@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# large model file, fetch with yolo-object-detection/download_weights.py
+yolo-object-detection/yolo-coco/yolov3.weights
+*.part
+# generated results
+yolo-object-detection/output/*
+!yolo-object-detection/output/.gitkeep
+*.avi

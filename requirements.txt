@@ -1,0 +1,4 @@
+# OpenCV 5 removed the Darknet (YOLOv3) and Caffe (MobileNet SSD) importers,
+# so these examples need OpenCV 4.x.
+opencv-python>=4.8,<5
+numpy>=1.24
