@@ -5,7 +5,7 @@ classes, and shows the result live. Press q to quit.
 
 Usage (from the SSDMobile-opencv-real-time-object-detection folder):
     python real_time_object_detection.py                       # webcam 0
-    python real_time_object_detection.py --input ../yolo-object-detection/videos/car_chase_01.mp4
+    python real_time_object_detection.py --input ../yolo-object-detection/videos/airport.mp4
     python real_time_object_detection.py --input clip.mp4 --output out.avi --no-display
 """
 

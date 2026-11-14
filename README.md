@@ -106,13 +106,13 @@ Press `q` in the window to quit. On macOS, the first run asks for permission to 
 ### From a video or image file
 
 ```bash
-python real_time_object_detection.py --input ../yolo-object-detection/videos/car_chase_01.mp4
+python real_time_object_detection.py --input ../yolo-object-detection/videos/airport.mp4
 ```
 
 To save the annotated video without opening a window:
 
 ```bash
-python real_time_object_detection.py --input ../yolo-object-detection/videos/car_chase_01.mp4 --output ssd_output.avi --no-display --max-frames 300
+python real_time_object_detection.py --input ../yolo-object-detection/videos/airport.mp4 --output ssd_output.avi --no-display --max-frames 300
 ```
 
 When the stream ends, the script prints the elapsed time and the average frames per second (about 8 to 14 FPS on a laptop CPU).
@@ -162,7 +162,7 @@ Both scripts follow the same steps:
 ## What changed in the 2026 update
 
 - Works with current OpenCV 4.x and NumPy 2. The old `getUnconnectedOutLayers()` indexing crashed on OpenCV 4.5.4 and newer; the scripts now use `getUnconnectedOutLayersNames()`.
-- Removed the `imutils` dependency.
+- Removed the `imutils` dependency, and removed two sample clips that were recorded TV news broadcasts.
 - The SSD script no longer forces the webcam: `--input` accepts a webcam index, video or image. It also exits cleanly at the end of a file (it used to crash on `vs.stop()`).
 - Added `--output`, `--no-display` and `--max-frames` options, plus model paths that default to the script's own folder.
 - Added `download_weights.py` with checksum verification, `requirements.txt`, and a `.gitignore`.
